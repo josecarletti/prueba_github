@@ -1,0 +1,428 @@
+/*reseteo*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+/*Barra de navegacion--------------------*/
+header {
+    background-image: url(img/bannerMenu.png);
+    background-size: contain;
+    position: fixed;
+    /*aplico para que acompañe el navbar*/
+    top: 0;
+    left: 0;
+
+}
+
+header {
+    z-index: 1;
+    /*aplico para que el h1 que dice
+ santanegro no pase por arriba del header*/
+}
+
+
+header nav ul li a {
+    font-family: 'Special Elite', cursive;
+    text-decoration: none;
+    font-size: 1em;
+    color: rgb(252, 252, 252);
+}
+
+.headerContainer {
+    display: flex;
+    width: 100%;
+    height: 75px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.logoNav {
+    padding: 10px;
+    width: 130px;
+    transition: all 1s;
+}
+
+.logoNav:hover {
+    transform: scale(1.2);
+}
+
+.logoFlex {
+    margin-left: 20px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.menu :hover {
+    /*pseudo clase hover*/
+    font-size: 1.5em;
+    transition: all 1s;
+}
+
+.menu :visited {
+    color: rgb(234, 255, 225);
+}
+
+.flexMenu {
+    display: flex;
+    margin-right: 30px;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    height: -webkit-fill-available;
+    align-content: flex-end;
+    flex-wrap: nowrap;
+}
+
+.flexSeccion {
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+}
+
+/*Gif/Transicion a la Home*/
+
+.gifPortada {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 75px;
+    position: relative;
+
+}
+
+.transition {
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    width: 100%;
+
+}
+
+.gif{
+    align-items: center;
+}
+
+.desliza {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: rgb(252, 252, 252);
+    /*object-position: center;
+    justify-content: flex-end;*/
+    position: absolute;
+    top: 80%;
+    left: 70%;
+    background-color: rgba(0, 0, 0, 0.561);
+    border-radius: 30px;
+    margin-left: 3px;
+    margin-right: 3px;
+    /*padding: 10px;*/
+    text-transform: uppercase;
+}
+
+/*Home*/
+
+#santaFont {
+    /*box modeling*/
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+    font-size: 80px;
+    font-stretch: extra-expanded;
+    background-color: seashell;
+    opacity: 60%;
+}
+
+.imgNovedades {
+    display: flex;
+    justify-content: center;
+    width: 33%;
+    height: 500px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.flexSection {
+    display: flex;
+    padding: 5px;
+}
+
+.flexh2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 5px;
+}
+
+body {
+    background-color: rgb(8, 8, 8);
+    background-attachment: fixed;
+}
+
+h2 {
+    font-family: 'Special Elite', cursive;
+    font-size: 24px;
+    color: blanchedalmond;
+    text-decoration: none;
+}
+
+h3 {
+    font-family: 'Special Elite', cursive;
+    font-size: 20px;
+}
+
+.imgBanner {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: 50% 20%;
+}
+
+.parrafoBio {
+    color: rgb(255, 255, 255);
+    background-color: rgba(26, 25, 25, 0.418);
+}
+
+.fotoGaleria {
+    width: 35%;
+    height: auto;
+}
+
+/*Otro box modeling (EN LA SECCION FOTOS*/
+.fotoBoxMod {
+    margin: 40px;
+    padding: auto;
+    display: inline-block;
+    margin-top: 100px;
+
+}
+
+/*Footer*/
+
+footer {
+    background-image: url(img/bannerMenu.png);
+    background-size: contain;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    height: 70px;
+}
+
+.flexFooter {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flexObjet {
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.iconContainer {
+    display: flex;
+    margin-left: 30px;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+.colorItem {
+    justify-content: space-around;
+    font-size: x-large;
+    color: rgb(241, 240, 240);
+}
+
+.colorItem:hover {
+    transform: scale(2);
+    transition: all 1s;
+}
+
+.flexText {
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Special Elite', cursive;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    margin-top: 7px;
+    margin-left: 250px;
+    margin-right: 36px;
+    flex-wrap: nowrap;
+}
+
+
+
+
+@media only screen and (max-width: 960px) {
+    
+    .gifPortada {
+        width: 100%;
+        justify-content: center;  
+    }
+
+    header {
+        background-image: none;
+        background-color: rgb(32, 30, 30);
+    }
+
+    header nav ul li a {
+        font-size: small;
+        color: rgb(235, 233, 233);
+    }
+
+    .headerContainer {
+        height: 56px;
+        width: 100%;
+    }
+
+    .logoFlex {
+        margin-top: 10px;
+        display: flex;
+        justify-content: start;
+
+    }
+
+    .logoNav {
+        padding: 5px;
+        width: 80px;
+        transition: all 1s;
+    }
+
+    .logoNav:hover {
+        transform: scale(1.2);
+    }
+
+    .flexMenu {
+        display: flex;
+        justify-content: center;
+        margin-right: 8px;
+        width: 100%;
+    }
+
+    .flexSeccion {
+        margin-left: 3px;
+        margin-right: 3px;
+        padding: 10px;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(32, 30, 30);
+        border-radius: 30px;
+    }
+
+    .headerContainer {
+        position: fixed;
+        top: 0%;
+    }
+
+    /*footer*/
+
+    footer {
+        justify-content: center;
+        background-image: none;
+        background-color: rgb(32, 30, 30);
+    }
+
+    .footerContainer {
+        height: 56px;
+        width: 100vh;
+    }
+
+    .flexFooter {
+        width: 100%;
+        height: 56px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 15px;
+    }
+    
+    .flexObjet {
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 25px;
+        margin: 0.5em;
+        width: 100%;
+        padding: auto;
+    }
+    
+    h5 .flexText {
+        font-size: small;
+    }
+    
+
+    .colorItem {
+        justify-content: flex-start;
+        font-size: small;
+        color: rgb(241, 240, 240);
+    }
+
+    .flexText {
+        display: flex;
+        justify-content: flex-end;
+        font-family: 'Special Elite', cursive;
+        font-size: 14px;
+        color: rgb(255, 255, 255);
+        margin-left: 20px;
+        margin-right: 36px;
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+    }
+
+
+
+}
+
+
+
+@media only screen and (min-width: 960px) {
+    body {
+        width: fit-content;
+        background-size: cover;
+        background-image: url("img/fondo.jpg");
+        background-attachment: fixed;
+    }
+
+
+
+}

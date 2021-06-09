@@ -1,0 +1,121 @@
+header {
+    width: 100%;
+    height: 100px;
+    background-image: url(img/bannerMenu.png);
+    background-size: contain;
+    position: fixed;
+    /* (fixed) aplico para que acompañe el navbar*/
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /* (z-index) aplico para que el h1 que dice santanegro no pase por arriba del header*/
+
+    .headerContainer {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+    }
+
+    nav {
+
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
+
+        a {
+            .logoFlex {
+                display: flex;
+                justify-content: flex-start;
+            }
+
+            img {
+                .logoNav {
+                    display: flex;
+                    justify-content: flex-start;
+                    padding: 10px;
+                    width: 150px;
+                    transition: all 1s;
+                    cursor: pointer;
+
+
+                    &:hover {
+                        transform: scale(1.3);
+                    }
+                }
+            }
+        }
+
+
+
+        ul {
+
+            .flexMenu {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                align-content: flex-end;
+                flex-wrap: nowrap;
+            }
+            
+            li {
+
+                .flexSeccion {
+                    display: flex;
+                    padding: 2em;
+                    width: 100%;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+
+                }
+
+                .menu {
+
+                    list-style: none;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        /*pseudo clase hover*/
+                        font-size: 2em;
+                        transition: all 1s;
+                    }
+
+                    &:visited {
+                        color: rgb(221, 219, 219);
+                    }
+                }
+
+                a {
+
+                    font-family: 'Special Elite', cursive;
+                    text-decoration: none;
+                    font-size: 14px;
+                    color: blanchedalmond;
+
+                    .flextextnav {
+                        display: flex;
+                        justify-content: flex-end;
+                        padding: auto;
+                        align-content: flex-end;
+
+                    }
+                }
+
+               
+
+               
+            }
+
+            
+        }
+
+       
+
+    }
+
+
+}
